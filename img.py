@@ -14,7 +14,7 @@ def load_model():
         scale=4,
         model_path='RealESRGAN_x4plus.pth',
         model=model,
-        tile=0,
+        tile=512,
         tile_pad=10,
         pre_pad=0,
         half=True if torch.cuda.is_available() else False
